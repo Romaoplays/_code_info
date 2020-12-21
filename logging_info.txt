@@ -1,0 +1,32 @@
+import logging
+
+# Log as if 'print'
+logging.basicConfig(
+    level=logging.DEBUG, format="%(asctime)s -  %(levelname)s -  %(message)s"
+)
+
+
+# Log to a file:
+logging.basicConfig(
+    filename="myProgramLog.txt",
+    level=logging.DEBUG,
+    format=" %(asctime)s -  %(levelname)s -  %(message)s",
+)
+
+# Possível trocar o level acima para mostrar só oq interessa ex: logging.ERROR logging.CRITICAL
+
+# basic logging
+logging.debug("This is a log message.")
+
+
+# Stop logging
+logging.disable(logging.CRITICAL)
+
+# logging levels
+logging.debug("test")
+logging.info("test")
+logging.warning("test")
+logging.error("test")
+logging.critical("test")
+
+assert 1 = 1

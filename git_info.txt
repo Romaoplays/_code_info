@@ -1,0 +1,50 @@
+#  Get fancy project
+
+cd C:\Users\gabri\Documents\myProjects
+
+cookiecutter gh:asweigart/cookiecutter-basicpythonproject
+
+-----------------------
+cd C:\Users\gabri\Documents\myProjects\     #  ADD PROJECT FOLDER AT THE END
+
+-----------------------
+
+#  Add Stuff
+git add .
+git commit -m "Message"
+
+git commit -am "Message"
+
+
+------------------
+#  Restore Stuff
+git restore <file>
+git checkout .
+
+git revert -n HEAD~1..HEAD    # 1 can be any number
+git add .
+git commit -m "message"       # Must recommit the rollback
+
+git show <hash>:<file>
+git checkout <file>           # Reverts single file
+
+
+
+----------
+#  Various
+git log
+git status
+
+-----------
+#  Messing with files
+git rm <file>    # Delete file
+git mv <file>    # Rename file
+
+
+------------
+#  Github
+git remote add origin https://github.com/Romaoplays/    .git   # Include .git at the end
+git push -u origin master      				       # Push to github
+
+
+git clone https://github.com/Romaoplays/            .git       # Clone from github
