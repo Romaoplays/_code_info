@@ -1,0 +1,24 @@
+import requests
+import bs4
+
+=====================
+# Get html
+
+headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"}
+
+res = requests.get("https://google.com", headers=headers)
+
+soup = bs4.BeautifulSoup(res.text, "html.parser")
+
+====================
+# Search
+
+soup_elements = soup.find_all("p", "title") # tag and attr
+	-> soup.find_all("div", class_="isRelinked")  || ("span", attrs={"class": "text", "lang": "de"})
+
+
+soup_element[0].getText()
+
+
+soup.find_all(id="link2")
+

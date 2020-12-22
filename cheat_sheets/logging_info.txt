@@ -13,9 +13,9 @@ logging.basicConfig(
     format=" %(asctime)s -  %(levelname)s -  %(message)s",
 )
 
-# Possível trocar o level acima para mostrar só oq interessa ex: logging.ERROR logging.CRITICAL
+# Possible to change the level above to only show higher-level warnings: logging.ERROR logging.CRITICAL
 
-# basic logging
+# Basic logging
 logging.debug("This is a log message.")
 
 
