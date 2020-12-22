@@ -4,7 +4,7 @@ import re
 example_regex = re.compile(r"REGEX TEXT")  # Create regex  # .* important operators
 
 
-example_regex.sub("", string)  # Substitute REGEX TEXT for nothing
+example_regex.sub("", string)  # Substitutes REGEX TEXT for nothing
 
 mo = example_regex.search("Hello, REGEX TEXT")
 

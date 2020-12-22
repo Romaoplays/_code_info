@@ -1,0 +1,49 @@
+from selenium import webdriver
+
+PATH = "C:\Program Files (x86)\chromedriver.exe"
+driver = webdriver.Chrome(PATH)
+
+driver.get("https://www.google.com")  # Opens webpage on the user's screen
+
+==================
+# Find element(s)
+
+driver.find_element_by_name("")
+driver.find_element_by_id("")
+driver.find_element_by_class_name("")
+driver.find_element_by_xpath("")
+driver.find_element_by_css_selector("")
+driver.find_element_by_tag_name("")
+driver.find_element_by_link_text("")
+driver.find_element_by_partial_link_text("")
+
+# Obs -> find_element or find_elements
+
+=================
+# Only click if it's there
+
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+
+
+WebDriverWait(driver, 20).until( 						# Change '20' to number of desired seconds
+    EC.element_to_be_clickable((By.ID, "electronic_resource_number"))
+)
+
+
+# "By" can be followed by:
+ID = "id"
+XPATH = "xpath"
+LINK_TEXT = "link text"
+PARTIAL_LINK_TEXT = "partial link text"
+NAME = "name"
+TAG_NAME = "tag name"
+CLASS_NAME = "class name"
+CSS_SELECTOR = "css selector"
+
+==================
+# Send keys
+
+element.send_keys("anything")
+element.send_keys(Keys.ENTER)
