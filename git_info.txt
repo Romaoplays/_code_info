@@ -7,6 +7,7 @@ cookiecutter gh:asweigart/cookiecutter-basicpythonproject
 -----------------------
 cd C:\Users\gabri\Documents\myProjects\     #  ADD PROJECT FOLDER AT THE END
 
+git init
 -----------------------
 
 #  Add Stuff

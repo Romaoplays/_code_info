@@ -1,0 +1,11 @@
+import re
+
+
+example_regex = re.compile(r"REGEX TEXT")  # Create regex  # .* important operators
+
+
+example_regex.sub("", string)  # Substitute REGEX TEXT for nothing
+
+mo = example_regex.search("Hello, REGEX TEXT")
+
+result = mo.group()  # Get stuff with regex
