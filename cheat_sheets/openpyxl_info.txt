@@ -15,7 +15,22 @@ sheet = wb["Sheet"]
 sheet.cell(row=1, column=1).value = 3.14          # Switch 1 and 1 for the cell coordinates
 cell_value = sheet.cell(row=1, column=1).value
 
+================
+# Get max numbers
+
+
+len(wb['A'])                  # Column numbers
+
+
+
 =======================
 # Save wb
 
 wb.save("Result.xlsx")
+
+
+==========ezsheets==============
+ss = ezsheets.Spreadsheet("1AP3ndHUSytLDzKFvT2V3Je_zO2dl1uzHf_RvjG70ew4")
+sheet = ss[0]
+
+sheet[1, 1] = 3.14

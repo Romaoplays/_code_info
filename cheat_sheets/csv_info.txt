@@ -1,0 +1,31 @@
+# Opening and closing
+
+
+with open('*.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+
+csv_file = open(*.csv, 'r')  # Read file
+csv_file = open(*.csv, 'w')  # Write or create file
+
+csv_file.close()
+
+=============================
+# Create reader and writer
+
+csv_reader = csv.reader(csv_file)
+csv_writer = csv.writer(csv_file)
+
+=======================
+# Other
+
+csv_writer.writerow(list)
+
+csv_list = list(csv_reader)
+
+=========================
+try:
+    csv_file = open("media.csv")
+except FileNotFoundError:
+    csv_file = open("media.csv", "w")
+    csv_file.close()
+    csv_file = open("media.csv", "r")
