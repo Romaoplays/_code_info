@@ -1,0 +1,43 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
+x = [0,1,2,3]
+y = [0,2,4,6]
+
+
+
+plt.figure(figsize = (5,3), dpi = 100) # Graph Size -> dpi 300 = ideal
+
+
+plt.plot(x,y, label = '2x', color = 'red', linestyle = '--', marker = '.', markersize = '10')
+
+plt.title('Title', fontdict={'fontame': 'Times New Roman', 'fontsize': 20)
+plt.xlabel('X Axis!')
+plt.ylabel('Y Axis!')
+
+# Have your own ticks
+
+plt.xticks([0,1,2,3,4])
+plt.yticks([0,2,4,6,8,10] 
+
+plt.legend() # Show label
+
+plt.savefig('example.png', dpi = 300)
+
+plt.show()
+
+
+=====================================
+
+# Bar chart
+
+labels = ['A','B','C']
+values = [1,4,2]
+
+
+plt.bar(labels, values)
+
+
+bars[0].set_hatch('/')
+plt.show()
