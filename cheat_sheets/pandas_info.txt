@@ -1,0 +1,47 @@
+import pandas as pd
+
+df = pd.read_csv('example.csv')
+df = pd.read_excel('example.xlsx')
+
+df = pd.read_csv('example.csv', delimiter='\t')  # Change delimiter
+
+df.head(3)  # Show only the top 3 rows
+df.tail(3)  # Show only the bottom 3 rows
+
+
+# Read Headers
+df.columns
+
+# Read each column
+df['Name'][0:5]
+
+# Read each row
+df.iloc[1:3]
+
+# Read specific location
+df.iloc[2,1]
+
+# Iterate through rows
+for index, row in df.iterrows():
+    print(index, row['Name'])
+
+
+
+df.loc[df['Type 1'] == 'Fire']
+
+
+df.sort_values('Name', ascending = False)
+
+
+df['Total'] = df['HP'] + df['Attack']
+
+
+# Rearrange columns
+
+df = df[['Total', 'HP', 'Attack']]
+
+# Save
+
+df.to_csv('modified.csv', index=False)
+df.to_excel('modified.csv', index=False)
+df.to_csv('modified.csv', index=False, sep='\t')  # Change delimiter
