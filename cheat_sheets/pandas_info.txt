@@ -45,3 +45,8 @@ df = df[['Total', 'HP', 'Attack']]
 df.to_csv('modified.csv', index=False)
 df.to_excel('modified.csv', index=False)
 df.to_csv('modified.csv', index=False, sep='\t')  # Change delimiter
+
+# Show without row limit
+with pd.option_context(
+    "display.max_rows", None, "display.max_columns", None
+):
