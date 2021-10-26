@@ -1,10 +1,3 @@
-#  Get fancy project
-
-cd C:\Users\gabri\Documents\myProjects
-
-cookiecutter gh:asweigart/cookiecutter-basicpythonproject
-
------------------------
 cd C:\Users\gabri\Documents\myProjects\     #  ADD PROJECT FOLDER AT THE END
 
 git init
@@ -15,7 +8,6 @@ git add .
 git commit -m "Message"
 
 git commit -am "Message"
-
 
 ------------------
 #  Restore Stuff
@@ -29,12 +21,11 @@ git commit -m "message"       # Must recommit the rollback
 git show <hash>:<file>
 git checkout <file>           # Reverts single file
 
-
-
 ----------
 #  Various
 git log
 git status
+git diff --cached
 
 -----------
 #  Messing with files
@@ -49,3 +40,18 @@ git push -u origin master      				       # Push to github
 
 
 git clone https://github.com/Romaoplays/            .git       # Clone from github
+git clone https://[USER]:[TOKEN]@github.com/username/repo.git  # Clones private repo
+
+----------
+# Branching 
+
+git checkout -b <branch-name>    # Create a new branch and check it out
+git checkout <branch-name>       # Checkout to an existing branch
+
+git branch -D <branch-name>      # Deletes Branch
+
+git merge <merging-branch-name>  # Merges branches (Must be in master branch)
+
+git push -u origin <branch-name> # Pushes branch to github
+
+
