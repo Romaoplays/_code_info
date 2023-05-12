@@ -2,4 +2,4 @@ _code_info
 
 ======
 
-Python cheat sheets for easy reference.
+Python, LaTeX, Vim and possible other's cheat sheets for easy reference.

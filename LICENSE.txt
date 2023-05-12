@@ -1,4 +1,4 @@
-Copyright (c) 2020 Gabriel Romao
+Copyright (c) 2023 Gabriel Romao
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
