@@ -1,0 +1,4 @@
+-> Vim live intragration: latexmk -pdf -pvc file.tex
+
+-> Data in different languages: /usepackage[portuguese]{babel} 
+
