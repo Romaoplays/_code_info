@@ -36,6 +36,7 @@ git mv <file>    # Rename file
 ------------
 #  Github
 git remote add origin https://github.com/Romaoplays/    .git   # Include .git at the end
+git remote add origin https://romaoplays:<token>@github.com/Romaoplays/ # Save token as password
 git push -u origin master      				       # Push to github
 
 
